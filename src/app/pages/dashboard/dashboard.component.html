@@ -1,0 +1,74 @@
+<div class="flex items-start bg-[#FBFBFB]">
+  <aside
+    class="flex flex-col w-[270px] max-w-xs h-full min-h-screen bg-[#1A1A1A] text-white"
+  >
+    <div class="h-full px-3 py-4">
+      <div class="flex items-center justify-center">
+        <img src="../../../assets/logo/logo.png" alt="Logo" class="w-12 h-12" />
+      </div>
+      <div class="mt-2">
+        <div class="p-2 font-medium">
+          <p>Menu</p>
+        </div>
+        <div class="flex flex-col gap-8 w-full">
+          <button class="gap-2 justify-start w-full">
+            <a routerLink="/dashboard">Dashboard</a>
+          </button>
+          <button class="gap-2 justify-start w-full">
+            <a routerLink="/dashboard/transacao">Transações</a>
+          </button>
+          <button class="gap-2 justify-start w-full">
+            <a routerLink="/dashboard/deposito">Depositar</a>
+          </button>
+          <button class="gap-2 justify-start w-full">
+            <a routerLink="/dashboard/saque">Sacar</a>
+          </button>
+        </div>
+        <div class="mt-6 p-2 font-medium">
+          <p>Cofrinhos</p>
+        </div>
+        <div>
+          <div
+            class="flex flex-col ml-4 gap-4 bg-[#333333] text-white p-5 rounded-xl"
+          >
+            <ul class="flex flex-col gap-2">
+              <li class="flex items-center gap-2">
+                <div class="w-4 h-4 rounded-full bg-black"></div>
+                Casamento
+              </li>
+              <li class="flex items-center gap-2">
+                <div class="w-4 h-4 rounded-full bg-red-600"></div>
+                acbook Pro M2
+              </li>
+              <li class="flex items-center gap-2">
+                <div class="w-4 h-4 rounded-full bg-blue-600"></div>
+                Viagem
+              </li>
+              <li class="flex items-center gap-2">
+                <div class="w-4 h-4 rounded-full bg-green-600"></div>
+                Moto nova
+              </li>
+            </ul>
+            <button class="w-full bg-[#333333] text-white">
+              Adicionar cofrinho
+            </button>
+          </div>
+        </div>
+        <div class="mt-4">
+          <button class="gap-2 justify-start w-full">Configuração</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="w-full">
+    <nav class="flex justify-around bg-white w-full min-w-screen p-2">
+      <div>
+        <input />
+      </div>
+      <div>AVATAR</div>
+    </nav>
+    <main class="w-full h-full">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
