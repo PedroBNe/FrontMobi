@@ -7,7 +7,7 @@ import { tap } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  apiUrl: string = "http://localhost:4200"
+  apiUrl: string = "https://mobibank.com.br/api"
 
   constructor(private httpClient: HttpClient) { }
 
