@@ -1,27 +1,29 @@
 <main>
   <section class="form-section">
-    <h2>{{ title }}</h2>
-    <ng-content></ng-content>
-    <div class="btn-wrapper">
-      <button
-        class="btn-primary"
-        (click)="submit()"
-        [disabled]="disablePrimaryBtn"
-      >
-        {{ primaryBtnText }}
-      </button>
-      <div class="divider">
-        <div></div>
-        <span>ou</span>
-        <div></div>
+    <div class="container-camp-form">
+      <h2>{{ title }}</h2>
+      <ng-content></ng-content>
+      <div class="btn-wrapper">
+        <button
+          class="btn-primary"
+          (click)="submit()"
+          [disabled]="disablePrimaryBtn"
+        >
+          {{ primaryBtnText }}
+        </button>
+        <div class="divider">
+          <div></div>
+          <span>ou</span>
+          <div></div>
+        </div>
+        <button class="btn-secondary" (click)="navigate()">
+          {{ secondaryBtnText }}
+        </button>
       </div>
-      <button class="btn-secondary" (click)="navigate()">
-        {{ secondaryBtnText }}
-      </button>
     </div>
   </section>
   <section class="main-section">
-    <h1>Você deveria, MobiBank!</h1>
-    <img src="/assets/svg/main-illustration.svg" />
+    <h1>MobiBank!</h1>
+    <img src="/assets/logo/logo.png" />
   </section>
 </main>

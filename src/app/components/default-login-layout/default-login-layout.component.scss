@@ -1,5 +1,17 @@
 @import "../../../styles/variables.scss";
 
+.form-section{
+    width: 50%;
+}
+
+.main-section{
+    width: 50%;
+}
+
+.container-camp-form{
+    width: 80%;
+}
+
 main {
     display: flex;
     flex-direction: row;
